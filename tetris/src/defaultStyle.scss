@@ -1,0 +1,14 @@
+/* 全局变量 */
+$bgColor: skyblue; // 主题颜色
+$btnColor: rgb(48, 112, 230); // 按钮颜色
+
+/* 全局默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box; // 标准盒
+    user-select: none; // 禁止选中文字
+    list-style: none; // 列表样式清空
+    outline: none; // 输入框样式清空
+}

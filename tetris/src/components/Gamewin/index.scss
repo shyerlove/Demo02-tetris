@@ -1,0 +1,22 @@
+.gameWin {
+    width: 100%;
+    height: 60%;
+    border: 5px solid black;
+    border-top-style: dotted;
+    padding: 20px 10px;
+
+    .screen-border {
+        width: 100%;
+        height: 100%;
+        border: 5px inset rgb(143 152 126);
+
+        .screen {
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgb(67, 71, 60);
+            padding: 5px;
+            display: flex;
+            background-color: rgb(143 152 126);
+        }
+    }
+}

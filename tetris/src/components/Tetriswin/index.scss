@@ -1,0 +1,43 @@
+$h: 46vh;
+$w: $h / 2;
+$color: rgb(120, 128, 106, 0.5);
+$isColor: black;
+
+.tetrisWin {
+    width: $w;
+    height: $h;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    padding: 2px;
+    gap: 1px 1px;
+
+    .tetris {
+        border: 1px solid $color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            display: block;
+            width: 70%;
+            height: 70%;
+            background-color: $color;
+        }
+    }
+
+    .isTetris {
+        border: 1px solid $isColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            display: block;
+            width: 70%;
+            height: 70%;
+            background-color: $isColor;
+        }
+    }
+}
