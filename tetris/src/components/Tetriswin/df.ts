@@ -12,7 +12,7 @@ const getType = (): Now => {
     ];
     return (
         blocks[Math.floor(Math.random() * 7)]
-        // blocks[5]
+        // blocks[3]
     );
 }
 
@@ -22,7 +22,8 @@ const main = (
     arr: Block,
     setArr: Function, dir: Array<Array<number> | string>,
     n: 0 | 1) => {
-    const [[x1, y1], [x2, y2], [x3, y3], [x4, y4]] = dir; // 解构坐标
+    const CopyDir = JSON.parse(JSON.stringify(dir));
+    const [[x1, y1], [x2, y2], [x3, y3], [x4, y4]] = CopyDir; // 解构坐标
     setArr(() => {
         /* 全部初始化 */
         let temArr = [...arr];
@@ -32,7 +33,7 @@ const main = (
         temArr[x4 as number][y4 as number] = n;
         return temArr;
     })
-    return dir;
+    return CopyDir;
 }
 
 /* 方法：清除行 */
